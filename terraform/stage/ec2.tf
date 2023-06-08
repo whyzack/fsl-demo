@@ -26,7 +26,7 @@ resource "aws_instance" "web" {
   key_name               = var.name
   vpc_security_group_ids = ["sg-04e71802572ef7697"]
   user_data              = var.user_data
-  iam_instance_profile = var.name
+  iam_instance_profile   = var.name
 
   tags = {
     Name = var.name
